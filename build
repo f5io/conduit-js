@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cp -rf lib/conduit.js dist/conduit.js
+uglifyjs dist/conduit.js -o dist/conduit.min.js
+
+echo '[Conduit] Build complete.'
