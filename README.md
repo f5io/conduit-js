@@ -47,7 +47,7 @@ The `add` method is used to define a function (`fn`) which will be added to the 
 #####Example
 
     Conduit.add('test', function(){
-		console.log('Browser Paint'); // logs out the file stack
+		console.log('Browser Paint');
 	});
 
 ####`remove`(`name /* String */`)
