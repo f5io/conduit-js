@@ -1,0 +1,13 @@
+{
+  "name": "conduit",
+  "version": "1.0.0",
+  "main": [
+    "lib/conduit.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {}
+}
