@@ -2,5 +2,6 @@
 
 cp -rf lib/conduit.js dist/conduit.js
 uglifyjs dist/conduit.js -o dist/conduit.min.js
+gzip -c dist/conduit.min.js | wc -c
 
 echo '[Conduit] Build complete.'
