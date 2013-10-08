@@ -7,8 +7,9 @@
         <script src="../lib/conduit.js"></script>
         <script>
             Conduit
-                .add('render', function() {
+                .add('render', function(delta) {
                     console.log('Paint frame');
+                    console.log('Time since last tick: ' + delta);
                 })
                 .start();
         </script>

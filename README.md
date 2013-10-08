@@ -42,12 +42,13 @@
 
 ####`add`(`name /* String */`, `fn /* Function */`)
 
-The `add` method is used to define a function (`fn`) which will be added to the `requestAnimationFrame` callback. The `name` is used to reference the function when it needs to be removed.
+The `add` method is used to define a function (`fn`) which will be added to the `requestAnimationFrame` callback. The `name` is used to reference the function when it needs to be removed. The time since last tick (`delta`) will be passed into the function.
 
 #####Example
 
-    Conduit.add('test', function(){
+    Conduit.add('test', function(delta){
 		console.log('Browser Paint');
+		console.log('Time since last tick: ' + delta);
 	});
 
 ####`remove`(`name /* String */`)
